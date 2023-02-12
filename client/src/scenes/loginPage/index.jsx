@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+import Footer from "./Footer";
 
 const LoginPage = () => {
   const theme = useTheme();
@@ -29,7 +30,9 @@ const LoginPage = () => {
         </Typography>
         <Form />
       </Box>
+        <Footer/>
     </Box>
+
   );
 };
 

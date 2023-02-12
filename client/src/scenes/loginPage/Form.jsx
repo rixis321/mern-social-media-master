@@ -1,4 +1,5 @@
 import { useState } from "react";
+//import Footer from "../../components/Footer"
 import {
   Box,
   Button,
@@ -15,6 +16,7 @@ import { useDispatch } from "react-redux";
 import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
+import Footer from "./Footer";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -294,8 +296,11 @@ const Form = () => {
           </Box>
         </form>
       )}
+
     </Formik>
+
   );
+
 };
 
 export default Form;
