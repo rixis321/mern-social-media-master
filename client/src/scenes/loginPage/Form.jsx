@@ -26,8 +26,8 @@ const registerSchema = yup.object().shape({
   location: yup.string().required("required"),
   occupation: yup.string().required("required"),
   picture: yup.string().required("required"),
-  tools: yup.string().required("required"),
-  services: yup.string().required("required"),
+  tools: yup.string(),
+  services: yup.string(),
 
 });
 

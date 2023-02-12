@@ -102,7 +102,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem" mb="0.5rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/hammer.png" alt="hammer" />
+            <img src="../assets/hammer2.png" alt="hammer" />
             <Box>
               <Typography color={main} fontWeight="500">
                 {tools}
@@ -118,7 +118,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
         <FlexBetween gap="1rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/paint.png" alt="paint" />
+            <img src="../assets/paint2.png" alt="paint" />
             <Box>
               <Typography color={main} fontWeight="500">
                 {services}
