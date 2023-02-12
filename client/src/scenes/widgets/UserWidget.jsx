@@ -44,8 +44,8 @@ const UserWidget = ({ userId, picturePath }) => {
     location,
     occupation,
     friends,
-      tools,
-      services,
+    tools,
+    services,
   } = user;
 
   return (
@@ -107,7 +107,6 @@ const UserWidget = ({ userId, picturePath }) => {
               <Typography color={main} fontWeight="500">
                 {tools}
               </Typography>
-              <Typography color={medium}>Garden</Typography>
             </Box>
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
@@ -124,7 +123,6 @@ const UserWidget = ({ userId, picturePath }) => {
               <Typography color={main} fontWeight="500">
                 {services}
               </Typography>
-              <Typography color={medium}>Painting walls,etc</Typography>
             </Box>
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
