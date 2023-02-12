@@ -44,6 +44,8 @@ const UserWidget = ({ userId, picturePath }) => {
     location,
     occupation,
     friends,
+      tools,
+      services,
   } = user;
 
   return (
@@ -103,7 +105,7 @@ const UserWidget = ({ userId, picturePath }) => {
             <img src="../assets/hammer.png" alt="hammer" />
             <Box>
               <Typography color={main} fontWeight="500">
-                Petrol lawnmower
+                {tools}
               </Typography>
               <Typography color={medium}>Garden</Typography>
             </Box>
@@ -120,7 +122,7 @@ const UserWidget = ({ userId, picturePath }) => {
             <img src="../assets/paint.png" alt="paint" />
             <Box>
               <Typography color={main} fontWeight="500">
-                Paint job
+                {services}
               </Typography>
               <Typography color={medium}>Painting walls,etc</Typography>
             </Box>

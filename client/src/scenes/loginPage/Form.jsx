@@ -24,6 +24,9 @@ const registerSchema = yup.object().shape({
   location: yup.string().required("required"),
   occupation: yup.string().required("required"),
   picture: yup.string().required("required"),
+  tools: yup.string(),
+  services: yup.string(),
+
 });
 
 const loginSchema = yup.object().shape({
@@ -39,6 +42,8 @@ const initialValuesRegister = {
   location: "",
   occupation: "",
   picture: "",
+  services: "",
+  tools:"",
 };
 
 const initialValuesLogin = {
@@ -160,6 +165,26 @@ const Form = () => {
                   error={Boolean(touched.location) && Boolean(errors.location)}
                   helperText={touched.location && errors.location}
                   sx={{ gridColumn: "span 4" }}
+                />
+                <TextField
+                    label="Tools(not required)"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.tools}
+                    name="tools"
+                    error={Boolean(touched.tools) && Boolean(errors.tools)}
+                    helperText={touched.tools && errors.tools}
+                    sx={{ gridColumn: "span 4" }}
+                />
+                <TextField
+                    label="Services(not required)"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.services}
+                    name="services"
+                    error={Boolean(touched.services) && Boolean(errors.services)}
+                    helperText={touched.services && errors.services}
+                    sx={{ gridColumn: "span 4" }}
                 />
                 <TextField
                   label="Occupation"
