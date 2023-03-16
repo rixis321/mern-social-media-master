@@ -2,6 +2,7 @@
 
 A Social Media app that brings neighbors together, allowing them to sell or lend construction types of equipment or offer repair services to one another.
 <br/>
+<br/>
 Created by:
 <br/>
 rixis321
